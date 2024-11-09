@@ -6,7 +6,7 @@ Windows 95 Pipes Screensaver
 - First Upload
 - I've made progress on the project,
 but I've been stuck trying to make the pipes
-be related to each other in 3D space.
+relate to each other in 3D space.
 
 I'm considering using Colliders / Physics
 instead of maths.
