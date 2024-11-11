@@ -66,6 +66,7 @@
     <Compile Include="Assets\My Assets\newStuff\ConstrainToBounds.cs" />
     <Compile Include="Assets\My Assets\PipeGenerator.cs" />
     <Compile Include="Assets\My Assets\newStuff\PipeGeneratorAI.cs" />
+    <Compile Include="Assets\My Assets\finalAssets\PipeCollisionSystem.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\My Assets\newStuff\newPipeScript.cs" />
     <Compile Include="Assets\My Assets\PipeMove.cs" />

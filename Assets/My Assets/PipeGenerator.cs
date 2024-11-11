@@ -80,7 +80,7 @@ public class PipeGenerator : MonoBehaviour
     void Update()
     {
 
-        // BEISPIEL 1: Randomisation  (zufällige Instanzierung mit Interaktion)
+        // BEISPIEL 1: Randomisation  (zufällige Instanziierung mit Interaktion)
         // Zuerst habe ich versucht, die Röhren je nach Eingabe in einer bestimmte Grenze zu instanzieren,
         // um zu sehen, wie es sich aussieht. (RGB Pipes) (Space -> E / Klick)
 
@@ -92,7 +92,7 @@ public class PipeGenerator : MonoBehaviour
                 // ... einer von dieser Bedingungen erfüllt ist, dann...
 
                 // GREEN PIPE 
-                // ( dies bleibt, bis man die Taste lässt ) -> unendliche Instanzierung mit Interaktion
+                // ( dies bleibt, bis man die Taste lässt ) -> unendliche Instanziierung mit Interaktion
                 if (fireAction.IsPressed())
                 {
                     // ... werden die Positions / Rotations auf diesem Range geändert (damit die vor der Kamera sichtbar bleiben) 
@@ -103,7 +103,7 @@ public class PipeGenerator : MonoBehaviour
                 }
 
                 // RED PIPE 
-                // ( hier wird nur ein Klick erlaubt ) -> endliche Instanzierung mit Interaktion
+                // ( hier wird nur ein Klick erlaubt ) -> endliche Instanziierung mit Interaktion
                 if (Input.GetButtonDown("Fire1"))
                 {
                     // ... werden die Positions / Rotations auf diesem Range geändert (damit die vor der Kamera sichtbar bleiben) 
@@ -114,7 +114,7 @@ public class PipeGenerator : MonoBehaviour
                 }
 
                 // BLUE PIPE 
-                // ( hier wird jeder Sekunde ein neues Rohr instanziert ) -> unendliche Instanzierung ohne Interaktion
+                // ( hier wird jeder Sekunde ein neues Rohr instanziert ) -> unendliche Instanziierung ohne Interaktion
                 if (Time.time > 0f)
                 {
                     // ... werden die Positions / Rotations auf diesem Range geändert (damit die vor der Kamera sichtbar bleiben) 
@@ -128,8 +128,8 @@ public class PipeGenerator : MonoBehaviour
 
         }
 
-        // BEISPIEL 2: Generation (Zeit-bedingte Instanzierung ohne Interaktion) 
-        // Danach habe ich versucht, die Röhren in eine bestimmte Richtung zu instanzieren
+        // BEISPIEL 2: Generation (Zeit-bedingte Instanziierung ohne Interaktion) 
+        // Danach habe ich versucht, die Röhren in einer bestimmter Richtung zu instanzieren
         // und in begrenzte Winkeln zu biegen. Dies ist ähnlich wie beim der Windows 95 Screensaver,
         // aber noch nicht genau das gleiche. (RGB+Brown Pipes) ( left shift + 15 sec)
 
@@ -207,12 +207,12 @@ public class PipeGenerator : MonoBehaviour
 
         }
 
-        // BEISPIEL 3: Simulation (Zeit-bedingte Instanzierung mit Parametern)
+        // BEISPIEL 3: Simulation (Zeit-bedingte Instanziierung mit Parametern)
         // Hier habe ich versucht, die Röhren mathematisch in einen bestimmten 2D Pfad zu instanzieren.
         // Leider ist das begrenzt. Um eine zufällige Simulation durchzuführen, wurde ich nach 
         // diesem Beispiel jeder Möglichkeit beschreiben sollen; so habe ich bemerkt, dass die Lösung
         // wahrscheinlich mit Colliders und Physik zu tun hat. 
-        // ( RandomColor() + 2D Rectangle + Instanzierung mit Klicks) 
+        // ( RandomColor() + 2D Rectangle + Instanziierung mit Klicks) 
         if (exampleIndex.Equals(3))
         {
             
@@ -287,9 +287,9 @@ public class PipeGenerator : MonoBehaviour
             }
         }
 
-        // BEISPIEL 4: Functions (Vereinfachung der Instanzierung) 
+        // BEISPIEL 4: Functions (Vereinfachung der Instanziierung) 
         // Hier habe ich einfach nur eine Funktion erstellt, dass die oben genannte Prozess vereinfacht. 
-        // (RandomColor() + unendliche Instanzierung mit Pipe3D Funktion)
+        // (RandomColor() + unendliche Instanziierung mit Pipe3D Funktion)
         if (exampleIndex.Equals(4))
         {
 
@@ -345,7 +345,7 @@ public class PipeGenerator : MonoBehaviour
     {
         if ( 5 < room && room < 10)
         {
-            // Instanzierung in einen 3D Raum
+            // Instanziierung in einen 3D Raum
             tempPosition = new Vector3(px, py, pz);
             tempRotation = Quaternion.Euler(rx, ry, rz);
             i++;
@@ -354,7 +354,7 @@ public class PipeGenerator : MonoBehaviour
             t++;
         } 
         else {
-            // Instanzierung in Beziehung zu vorheriges Röhres
+            // Instanziierung in Beziehung zu vorheriges Röhres
 
             currentPosition += Vector3.right * 2f * px;
             currentPosition += Vector3.up * 1f * py;
