@@ -7,4 +7,3 @@ Examples:
 3. Simulation
 4. Functions
 5. Physics
-6. Conclusion
